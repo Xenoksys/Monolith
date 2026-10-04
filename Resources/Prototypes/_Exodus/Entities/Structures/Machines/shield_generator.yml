@@ -357,3 +357,35 @@
     maxCartridges: 1
   - type: Machine
     board: ShieldGeneratorUnsaMachineCircuitboard
+
+# Sintez Holding corporate shield. Hardened against asteroid collisions,
+# weak against projectiles. Uses the reliable small shield platform.
+- type: entity
+  id: ShieldGeneratorMS150
+  parent: ShieldGeneratorSmall
+  name: sentinel-150-shield-generator-name
+  description: sentinel-150-shield-generator-description
+  components:
+  - type: ShipShieldEmitter
+    damageLimit: 90000
+    healPerSecond: 600
+    baseDraw: 25000
+    maxDraw: 70000
+    shieldColor: "#FFFF00"
+    collisionResistanceMultiplier: 0.08
+    deflectionDamageModifier: 1.5
+  - type: Sprite
+    sprite: _Mono/Structures/ShuttleComponents/shield.rsi
+    snapCardinals: true
+    layers:
+    - state: control
+    - state: control_on
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+      visible: false
+      color: "#FFFF00"
+  - type: PointLight
+    color: "#FFFF00"
+  - type: Anchorable
+    flags:
+    - None

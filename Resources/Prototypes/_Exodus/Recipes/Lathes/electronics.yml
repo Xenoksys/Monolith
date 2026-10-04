@@ -3,10 +3,16 @@
   parent: BaseCircuitboardRecipe
   result: OreCatcherMachineCircuitboard
 
+- type: latheRecipe
+  id: MachineShipDrillLargeCircuitboard
+  parent: BaseCircuitboardRecipe
+  result: MachineShipDrillLargeCircuitboard
+
 - type: latheRecipePack
   id: ExodusMiningBoards
   recipes:
   - OreCatcherMachineCircuitboard
+  - MachineShipDrillLargeCircuitboard
 
 - type: latheRecipe
   id: MedicalBiofabMachineBoard
