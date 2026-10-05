@@ -372,7 +372,7 @@
     baseDraw: 25000
     maxDraw: 70000
     shieldColor: "#FFFF00"
-    collisionResistanceMultiplier: 0.08
+    collisionResistanceMultiplier: 0.05
     deflectionDamageModifier: 1.5
   - type: Sprite
     sprite: _Mono/Structures/ShuttleComponents/shield.rsi
@@ -386,6 +386,13 @@
       color: "#FFFF00"
   - type: PointLight
     color: "#FFFF00"
+  - type: Construction
+    graph: MachineImmovable
+    node: machine
+    deconstructionTarget: null
+    containers:
+    - machine_board
+    - machine_parts
   - type: Anchorable
     flags:
     - None

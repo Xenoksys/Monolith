@@ -31,8 +31,8 @@
     powerLoad: 2000
   - type: ExtensionCableReceiver
   - type: ShipDrill
-    drillOffsets: 0, -1.5
-    drillSize: 3, 2
+    drillOffsets: 0, -2.5
+    drillSize: 3, 4
     drillType: !type:GatheringDrillType
   - type: Machine
     board: MachineShipDrillLargeCircuitboard
@@ -47,3 +47,14 @@
         - MachineMask
         layer:
         - MachineLayer
+  - type: RadarBlip
+    radarColor: "#FFFFFF"
+    visibleFromOtherGrids: true
+    scale: 2
+    shape: triangle
+    gridConfig:
+      color: "#FFFFFF"
+      shape: Triangle
+      respectZoom: true
+      rotate: true
+      bounds: "-1.5,-1.5,1.5,1.5"
